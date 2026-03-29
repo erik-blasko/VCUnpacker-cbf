@@ -45,12 +45,14 @@ python cbf_unpacker.py <file.cbf> --list
 
 ### Example: Extract the full game
 
-Assuming Vietcong is installed in `<VCDIR>` and you want to extract to `<VCDIR>/Unpacked`:
+Assuming Vietcong is installed in `<VCDIR>` and you want to extract to `<VCDIR>/Unpacked`.
+
+CBF filenames contain a language code (`cz` = Czech, `en` = English, `de` = German, etc.). Replace `cz` with your language version in the commands below.
 
 ```bash
 cd <VCDIR>
 
-# Main game
+# Main game (replace "cz" with your language code, e.g. "en", "de", "fr")
 python cbf_unpacker.py vietcong_cz_01.cbf Unpacked/VC
 python cbf_unpacker.py vietcong_cz_02.cbf Unpacked/VC
 python cbf_unpacker.py vietcong_cz_dub.cbf Unpacked/VC
@@ -65,7 +67,7 @@ python cbf_unpacker.py vietcong_140.cbf Unpacked/VC/Patches/140
 python cbf_unpacker.py vietcong_150.cbf Unpacked/VC/Patches/150
 python cbf_unpacker.py vietcong_160.cbf Unpacked/VC/Patches/160
 
-# DLC — Fist Alpha
+# DLC — Fist Alpha (replace "cze" with your language code)
 python cbf_unpacker.py addons/fistalpha/fistalpha_01.cbf Unpacked/FA
 python cbf_unpacker.py addons/fistalpha/fistalpha_02.cbf Unpacked/FA
 python cbf_unpacker.py addons/fistalpha/fistalpha_03.cbf Unpacked/FA
