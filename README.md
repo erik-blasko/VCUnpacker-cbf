@@ -45,7 +45,7 @@ python cbf_unpacker.py <file.cbf> --list
 
 ### Example: Extract the full game
 
-Assuming Vietcong is installed in `<VCDIR>` and you want to extract to `<VCDIR>/Unpacked`.
+Assuming Vietcong is installed in `<VCDIR>` and you want to extract to `<VCDIR>/.unpacked`.
 
 CBF filenames contain a language code (`cz` = Czech, `en` = English, `de` = German, etc.). Replace `cz` with your language version in the commands below.
 
@@ -53,31 +53,31 @@ CBF filenames contain a language code (`cz` = Czech, `en` = English, `de` = Germ
 cd <VCDIR>
 
 # Main game (replace "cz" with your language code, e.g. "en", "de", "fr")
-python cbf_unpacker.py vietcong_cz_01.cbf Unpacked/VC
-python cbf_unpacker.py vietcong_cz_02.cbf Unpacked/VC
-python cbf_unpacker.py vietcong_cz_dub.cbf Unpacked/VC
-python cbf_unpacker.py vietcong_cz_gsp.cbf Unpacked/VC
-python cbf_unpacker.py vietcong_cz_xtl.cbf Unpacked/VC
+python cbf_unpacker.py vietcong_cz_01.cbf .unpacked/VC
+python cbf_unpacker.py vietcong_cz_02.cbf .unpacked/VC
+python cbf_unpacker.py vietcong_cz_dub.cbf .unpacked/VC
+python cbf_unpacker.py vietcong_cz_gsp.cbf .unpacked/VC
+python cbf_unpacker.py vietcong_cz_xtl.cbf .unpacked/VC
 
 # Patches
-python cbf_unpacker.py vietcong_101.cbf Unpacked/VC/Patches/101
-python cbf_unpacker.py vietcong_120.cbf Unpacked/VC/Patches/120
-python cbf_unpacker.py vietcong_130.cbf Unpacked/VC/Patches/130
-python cbf_unpacker.py vietcong_140.cbf Unpacked/VC/Patches/140
-python cbf_unpacker.py vietcong_150.cbf Unpacked/VC/Patches/150
-python cbf_unpacker.py vietcong_160.cbf Unpacked/VC/Patches/160
+python cbf_unpacker.py vietcong_101.cbf .unpacked/VC/Patches/101
+python cbf_unpacker.py vietcong_120.cbf .unpacked/VC/Patches/120
+python cbf_unpacker.py vietcong_130.cbf .unpacked/VC/Patches/130
+python cbf_unpacker.py vietcong_140.cbf .unpacked/VC/Patches/140
+python cbf_unpacker.py vietcong_150.cbf .unpacked/VC/Patches/150
+python cbf_unpacker.py vietcong_160.cbf .unpacked/VC/Patches/160
 
 # DLC — Fist Alpha (replace "cze" with your language code)
-python cbf_unpacker.py addons/fistalpha/fistalpha_01.cbf Unpacked/FA
-python cbf_unpacker.py addons/fistalpha/fistalpha_02.cbf Unpacked/FA
-python cbf_unpacker.py addons/fistalpha/fistalpha_03.cbf Unpacked/FA
-python cbf_unpacker.py addons/fistalpha/fistalpha_cze_dub.cbf Unpacked/FA
-python cbf_unpacker.py addons/fistalpha/fistalpha_cze_gen.cbf Unpacked/FA
-python cbf_unpacker.py addons/fistalpha/fistalpha_cze_snd.cbf Unpacked/FA
-python cbf_unpacker.py addons/fistalpha/fistalpha_cze_xtl.cbf Unpacked/FA
+python cbf_unpacker.py addons/fistalpha/fistalpha_01.cbf .unpacked/FA
+python cbf_unpacker.py addons/fistalpha/fistalpha_02.cbf .unpacked/FA
+python cbf_unpacker.py addons/fistalpha/fistalpha_03.cbf .unpacked/FA
+python cbf_unpacker.py addons/fistalpha/fistalpha_cze_dub.cbf .unpacked/FA
+python cbf_unpacker.py addons/fistalpha/fistalpha_cze_gen.cbf .unpacked/FA
+python cbf_unpacker.py addons/fistalpha/fistalpha_cze_snd.cbf .unpacked/FA
+python cbf_unpacker.py addons/fistalpha/fistalpha_cze_xtl.cbf .unpacked/FA
 
 # DLC — Red Dawn
-python cbf_unpacker.py addons/reddawn/reddawn.cbf Unpacked/RD
+python cbf_unpacker.py addons/reddawn/reddawn.cbf .unpacked/RD
 ```
 
 ### Use as a library

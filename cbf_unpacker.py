@@ -294,7 +294,7 @@ Examples:
   %(prog)s game.cbf --list                  List files without extracting
         """)
     parser.add_argument('cbf', help='Input .CBF archive')
-    parser.add_argument('output', nargs='?', default=None, help='Output directory')
+    parser.add_argument('output', nargs='?', default='.unpacked', help='Output directory (default: .unpacked)')
     parser.add_argument('--list', '-l', action='store_true', help='List files without extracting')
     parser.add_argument('--filter', '-f', default=None, help='Extract only files matching extension (e.g. .dds)')
     parser.add_argument('--verbose', '-v', action='store_true', help='Show each extracted file')
